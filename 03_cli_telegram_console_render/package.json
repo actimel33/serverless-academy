@@ -1,0 +1,14 @@
+{
+  "name": "03_cli_telegram_render_bot",
+  "version": "1.0.0",
+  "description": "a simple telegram bot that can act as notes or notepad when you need to save something urgently from the console.",
+  "main": "index.js",
+  "type": "module",
+  "author": "Andrew Chernuha",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.63.0"
+  }
+}
