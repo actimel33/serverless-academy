@@ -34,10 +34,10 @@ const onEnterAction = async () => {
         name: 'userToFindInDb',
       }]);
 
-      const user = parsed.find(u => u.userName.toLowerCase() === userToFindInDb.toLowerCase());
+      const user = parsed.filter(u => u.userName.toLowerCase() === userToFindInDb.toLowerCase());
 
       if (user) {
-        console.log(`User ${userToFindInDb} was found.`);
+        console.log(`User(s) ${userToFindInDb} was found.`);
         console.log(JSON.stringify(user));
       } else {
         console.log(`Sorry, but there is no user ${userToFindInDb} in the database.`);
