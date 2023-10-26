@@ -1,0 +1,16 @@
+{
+  "name": "04_telegram_bot_weather",
+  "version": "1.0.0",
+  "description": "A bot that will give the user the weather forecast for a particular city. Choose the city according to your taste or where you live.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "env $(cat .env | xargs) node index.js"
+  },
+  "author": "Andrew Chernuha",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "node-telegram-bot-api": "^0.63.0"
+  }
+}
